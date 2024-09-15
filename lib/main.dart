@@ -1,4 +1,5 @@
 import 'package:demo_app/form_test.dart';
+import 'package:demo_app/input_test.dart';
 import 'package:demo_app/issue_1619_repro.dart';
 import 'package:demo_app/issue_1677_repro.dart';
 import 'package:demo_app/nesting_screen.dart';
@@ -97,6 +98,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: const Text('Form Test'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const InputTestPage()),
+                );
+              },
+              child: const Text('Input Test'),
             ),
             ElevatedButton(
               onPressed: () {
